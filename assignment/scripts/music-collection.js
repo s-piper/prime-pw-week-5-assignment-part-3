@@ -14,4 +14,11 @@ function addToCollection(title, artist, yearPublished,) { //start addToCollectio
   return newAlbum;//returns the entered info
 }//end addToCollection function
 console.log(addToCollection('Faces in Relfection', 'George Duke','1974'));
+console.log(addToCollection('Live at Filmore West', 'King Curtis', '1971'));
+console.log(addToCollection('Love is Here 1', 'Pharoah Sanders', '1975'));
+console.log(addToCollection('Feel', 'George Duke', '1974'));
+console.log(addToCollection('Ventura', 'Anderson .Paak', '2019'));
+console.log(addToCollection('Flower Boy', 'Tyler, The Creator', '2017'));
+//Added to collection
+
 console.log('My albums:', collection);//Logs collections array
