@@ -22,3 +22,11 @@ console.log(addToCollection('Flower Boy', 'Tyler, The Creator', '2017'));
 //Added to collection
 
 console.log('My albums:', collection);//Logs collections array
+
+function showCollection() {
+  for (let albums of collection) {
+    console.log('My fav', albums);
+  }
+}
+
+showCollection()
