@@ -24,9 +24,12 @@ console.log(addToCollection('Flower Boy', 'Tyler, The Creator', '2017'));
 console.log('My albums:', collection);//Logs collections array
 
 function showCollection() {
-  for (let albums of collection) {
-    console.log('My fav', albums);
+  for (var i = 0; i < collection.length; i++) {
+    if (collection[i].yearPublished < 2020) {
+      console.log(collection.length);
+      console.log(collection[i].title +', by' + collection[i].artist + ', published in ' + collection[i].yearPublished);
+    }
   }
 }
 
-showCollection()
+console.log('Test showing collection', showCollection());
