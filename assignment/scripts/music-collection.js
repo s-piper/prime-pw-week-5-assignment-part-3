@@ -23,13 +23,12 @@ console.log(addToCollection('Flower Boy', 'Tyler, The Creator', '2017'));
 
 console.log('My albums:', collection);//Logs collections array
 
-function showCollection() {
+function showCollection() { //starts showCollection function
   for (var i = 0; i < collection.length; i++) {
-    if (collection[i].yearPublished < 2020) {
+    if (collection[i].yearPublished < 3000) {// looks up year published is less than 3000, should include all. Kinda getting myself into a Y2k situation here.
       console.log(collection.length);
-      console.log(collection[i].title +', by' + collection[i].artist + ', published in ' + collection[i].yearPublished);
-    }
+      console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`);
+    }// Logs Title by Artist
   }
 }
-
-console.log('Test showing collection', showCollection());
+showCollection();
