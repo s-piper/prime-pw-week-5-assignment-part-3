@@ -27,7 +27,7 @@ function showCollection() { //starts showCollection function
   console.log('Number of albums:', collection);
   for (var i = 0; i < collection.length; i++) {
     if (collection[i].yearPublished < 3000) { // looks up year published is less than 3000, should include all.
-      //Kinda getting myself into a Y2k situation here.
+                                              //Kinda getting myself into a Y2k situation here.
     console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`);
     }// Logs Title by Artist
   }
@@ -35,9 +35,17 @@ function showCollection() { //starts showCollection function
 
 showCollection();
 
-function findArtist(Title) {// starts findArtist
-  console.log('in findArtist');
+function findByArtist(artist) {// starts findByArtist
+  console.log('in findByArtist');
+  let results = []; // stores results
+  for (var i = 0; i < collection.length; i++) {
+    let name = collection[i];
+      if (artist === collection[i].artist) {
+      results.push(collection[i]);// if the artist is found this pushes it to results array
+    }
+  }console.log(results);
 }
 
-
-findArtist()
+findByArtist('George Duke'); //should contain two results
+findByArtist('King Curtis'); //should containt one result
+findByArtist('Smash Mouth'); // should return undefined
