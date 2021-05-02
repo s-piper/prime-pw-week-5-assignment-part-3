@@ -44,8 +44,23 @@ function findByArtist(artist) {// starts findByArtist
       results.push(collection[i]);// if the artist is found this pushes it to results array
     }
   }console.log(results);
-}
+} // end findByArtist
 
 findByArtist('George Duke'); // should contain two results
 findByArtist('King Curtis'); // should contain one result
 findByArtist('Smash Mouth'); // should contain zero results
+
+function search(artist, year){ //start search
+console.log('in search');
+
+let results1 = []; // stores results
+for (var i = 0; i < collection.length; i++) {
+  let name = collection[i];
+    if (artist === collection[i].artist && year === collection[i].yearPublished) {
+    results1.push(collection[i]);// if the artist is found this pushes it to results array
+  }
+ } console.log(results1);
+}// end search
+
+search('George Duke', '1974');
+search('George Duke', '1975');
