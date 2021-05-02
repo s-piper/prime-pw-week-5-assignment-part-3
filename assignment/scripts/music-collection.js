@@ -46,6 +46,6 @@ function findByArtist(artist) {// starts findByArtist
   }console.log(results);
 }
 
-findByArtist('George Duke'); //should contain two results
-findByArtist('King Curtis'); //should containt one result
-findByArtist('Smash Mouth'); // should return undefined
+findByArtist('George Duke'); // should contain two results
+findByArtist('King Curtis'); // should contain one result
+findByArtist('Smash Mouth'); // should contain zero results
